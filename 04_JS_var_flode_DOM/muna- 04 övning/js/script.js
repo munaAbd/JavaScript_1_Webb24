@@ -18,7 +18,9 @@ for (let i = 0; i < 6; i++) {
 
   console.log(printString);
 }
+
 }
+
 for (let row = 0; row < 10; row++) {
     let cell ="";
     for (let col = 0; col < 10; col++) {

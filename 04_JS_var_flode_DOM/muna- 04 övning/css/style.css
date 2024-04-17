@@ -3,3 +3,13 @@
     border-color: green;
     border-style: 2px solid;
 }
+
+*{
+    background-color: blue;
+    width: 20px;
+    margin-left: auto;
+    justify-content: center;
+    text-align: justify;
+    
+}
+    
