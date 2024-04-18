@@ -154,7 +154,7 @@ body.appendChild(header2);
 
 
 let table= document.createElement("table");
-table.style.border = "1 px solid black ";
+table.style.border = "2px solid black";
 table.style.width = "60%";
 table.style.margin = "auto";
 
@@ -163,7 +163,7 @@ let colCount = 5;
 
 for( let row= 0; row < rowCount; row++){
     let tableRow = document.createElement("tr");
-    tableRow.style.border = "1 px solid black ";
+    tableRow.style.border = "1px solid black ";
     tableRow.style.width = "5px";
     table.appendChild(tableRow);
 
