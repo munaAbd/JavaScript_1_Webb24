@@ -182,7 +182,7 @@ for( let row= 0; row < rowCount; row++){
             let tableData = document.createElement("td");
             tableData.setAttribute("id", `${row}${col}`);
             tableData.style.border = " 2px solid black"; 
-            tableData.innerText =`${row}${col}`;
+            tableData.innerText =`${row-1}${col}`;
             tableRow.appendChild(tableData);
         }
     }
@@ -192,17 +192,17 @@ for( let row= 0; row < rowCount; row++){
 
 
 
-   for ( let row = 0; row < rowCount ; row++) {
+   /*for ( let row = 0; row < rowCount ; row++) {
         for( let col = 0; col < colCount; col++) {
             if( row !== 0){
 
-        document.getElementById (`${row}${col}`).innerText = `${row}${col}`;
+        document.getElementById (`${row}${col}`).innerText = `${row -1}${col}`;
         }
     }
     
     }
 
-
+*/
 
    /* document.getElementById(`34`).innerText="HELLO";
 
