@@ -124,6 +124,7 @@ for (let index = 0; index < allElements.length; index++){
 let nav = document.createElement("nav" );
 nav.style.backgroundImage= "url(https://cdn.pixabay.com/photo/2015/01/17/13/52/gem-602252_1280.jpg";
 nav.style.height= "300px";
+nav.style.border= "2px solid black";
 nav.style.backgroundRepeat = "no-repeat";
 nav.style.backgroundPosition = "center";
 
@@ -158,7 +159,7 @@ table.style.border = "2px solid black";
 table.style.width = "60%";
 table.style.margin = "auto";
 
-let rowCount = 10;
+let rowCount = 6;
 let colCount = 5;
 
 for( let row= 0; row < rowCount; row++){
@@ -170,10 +171,10 @@ for( let row= 0; row < rowCount; row++){
 
     for ( let col = 0; col < colCount; col++){
 
-        if ( row=== 0) {
+        if ( row === 0) {
             let tableHeader = document.createElement("th");
             tableHeader.setAttribute("id", `${row}${col}`);
-            tableHeader.innerText= "Index";
+            tableHeader.innerText= " Index " + `${col}` ;
             tableHeader.style.border = " 2px solid black"; 
             tableRow.appendChild(tableHeader);
 
@@ -181,25 +182,37 @@ for( let row= 0; row < rowCount; row++){
             let tableData = document.createElement("td");
             tableData.setAttribute("id", `${row}${col}`);
             tableData.style.border = " 2px solid black"; 
-            tableData.innerText = col;
+            tableData.innerText =`${row}${col}`;
             tableRow.appendChild(tableData);
-
         }
-
     }
 }
+ body.appendChild(table);
 
-    body.appendChild(table);
 
-    for ( let row = 0; row < rowCount ; row++) {
+
+
+   for ( let row = 0; row < rowCount ; row++) {
         for( let col = 0; col < colCount; col++) {
             if( row !== 0){
 
-        document.getElementById (`${row}${col}`).innerText = row;
+        document.getElementById (`${row}${col}`).innerText = `${row}${col}`;
         }
     }
     
     }
+
+
+
+   /* document.getElementById(`34`).innerText="HELLO";
+
+    let header4 = document.getElementById(`04`);
+    header4.innerText = "HEJSAN";
+
+   */
+
+ 
+
 
 let article1 = document.createElement("article");
 article1.style.width = " 50% ";
