@@ -155,6 +155,7 @@ body.appendChild(header2);
 
 
 let table= document.createElement("table");
+
 table.style.border = "2px solid black";
 table.style.width = "60%";
 table.style.margin = "auto";
@@ -164,25 +165,32 @@ let colCount = 5;
 
 for( let row= 0; row < rowCount; row++){
     let tableRow = document.createElement("tr");
+
     tableRow.style.border = "1px solid black ";
     tableRow.style.width = "5px";
+
     table.appendChild(tableRow);
 
 
     for ( let col = 0; col < colCount; col++){
 
         if ( row === 0) {
+
             let tableHeader = document.createElement("th");
             tableHeader.setAttribute("id", `${row}${col}`);
+
             tableHeader.innerText= " Index " + `${col}` ;
+
             tableHeader.style.border = " 2px solid black"; 
             tableRow.appendChild(tableHeader);
 
         }else{
             let tableData = document.createElement("td");
             tableData.setAttribute("id", `${row}${col}`);
-            tableData.style.border = " 2px solid black"; 
+
             tableData.innerText =`${row-1}${col}`;
+
+            tableData.style.border = " 2px solid black"; 
             tableRow.appendChild(tableData);
         }
     }
@@ -202,7 +210,7 @@ for( let row= 0; row < rowCount; row++){
     
     }
 
-*/
+   */
 
    /* document.getElementById(`34`).innerText="HELLO";
 
