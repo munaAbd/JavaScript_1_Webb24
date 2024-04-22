@@ -231,7 +231,7 @@ console.log(messageForSlicing);
 
 //Find string
 
-let article = "Ända sedan Daniel Craig 2021 tackade ja för sig som James Bond";
+let article = "Ända sedan Daniel Craig 2021 tackade ja för sig som James Bond har det ";
 let articleToLower = article.toLowerCase();
 let hero;
 
@@ -272,3 +272,64 @@ for(let i = 0; i < userDataSplit.length; i++) {
 
 console.log("Data after split");
 console.log(userDataSplit);
+
+
+
+
+//Join
+
+console.log("joining user data split with ´, ´ ");
+let userDataJoin = userDataSplit.join(", ");
+console.log(userDataJoin);
+
+
+
+
+//Replace a string with another string
+
+let stringBefore = "This is the last example of evening";
+console.log("String before: " + stringBefore)
+let stringAfter = stringBefore.replace("last", "first");
+console.log("String after: " + stringAfter);
+
+let stringAfterUnsuccesfullReplace = stringBefore.replace("France", "Burkino Paso");
+console.log("String after: " + stringAfter);
+
+
+let stringWithMultipleReplace = stringBefore.replaceAll("e", "x");
+console.log("stringAfterUnsuccesfullReplace: " +  stringBefore.replaceAll("e", "x"));
+
+stringBefore = "this is a new text";
+
+
+
+
+//Övning i slutet
+
+let userComp = "Skärmskydd, 499, Mobiltelefon, 299, Telefonfodral, 89, Laptop, 799, Hörlurar, 199";
+let userCompSplit = userComp.split(",");
+console.log("Data after split");
+ 
+
+console.log(userComp);
+console.log(userCompSplit);
+
+
+
+for(let i = 0; i < userCompSplit.length; i++) {
+
+    userCompSplit[i] = userCompSplit[i].trim();
+    
+    if(i%2 !== 0) {
+        
+        userCompSplit[i]= Number.parseInt(userCompSplit[i]);
+     } 
+
+     if(i%2 === 0) {
+
+        
+     }
+}
+
+console.log(userCompSplit);
+
