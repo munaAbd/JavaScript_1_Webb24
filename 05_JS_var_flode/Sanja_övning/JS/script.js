@@ -10,8 +10,6 @@ console.log(Math.pow(10,2));
 console.log("Math.pow(10,-2);");
 console.log(Math.pow(10,-2));
 
-console.log("Math.pow(10,a);");
-console.log(Math.pow(10,a));
 
 
 //Random
@@ -77,12 +75,12 @@ console.log(Math.max(1,5,2,3));
 
 //Exempel algo max
 
-let 1 = [1,5,2,3];
+let l = [1,5,2,3];
 let tempMax = 0;
 
-for (let i = 0; i < 1.length; i++) {
-    if(1[i] > tempMax) {
-        tempMax = 1[i];
+for (let i = 0; i < l.length; i++) {
+    if(l[i] > tempMax) {
+        tempMax = l[i];
     }
 }
 
@@ -107,7 +105,7 @@ console.log(Math.E);
 
 console.log("a = 5, b = `5`")
 let a = 5;
-let B = "5";
+let b = "5";
 //checking if b is an integer
 console.log("is b an integer" + Number.isInteger(b));
 
@@ -117,7 +115,7 @@ console.log(a + b);
 console.log("a + Number.parseInt(b)");
 console.log("a = 5, b = 5")
 
-if(!Number.isInteger(B)) {
+if(!Number.isInteger(b)) {
     b = Number.parseInt(b);
 }
 
@@ -143,3 +141,36 @@ console.log(Number.MIN_VALUE);
 console.log("Number.MIN_VALUE - 10");
 console.log(Number.MIN_VALUE - 10);
 
+
+
+//Date and time
+
+console.log("Date.now() tim is sec from 1970");
+console.log(Date.now());
+
+ //how to get current date and time
+
+console.log("new Date() creates a date object with the current date");
+
+let currentDate = new Date(); //<-create date object 
+console.log(currentDate); //<- return full date data or...
+console.log("dateObject.getHours() returns hours");
+console.log(currentDate.getHours()); //<-return specific data
+console.log("dateObject.getMinutes() returns minutes");
+console.log(currentDate.getMinutes());
+
+
+
+//Strings
+
+//Konvert integer to string
+
+console.log("Number.toString(5)");
+let integerNumber = 5;
+let convertedNumber;
+
+if(Number.isInteger(integerNumber)) {
+    convertedNumber = integerNumber.toString();
+}
+
+console.log(convertedNumber);
