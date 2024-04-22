@@ -205,8 +205,70 @@ let text = "HELLO";
 console.log("start String: " + text);
 let textToLowerCase = text.toLowerCase();
 console.log("start string toLowerCase()" + textToLowerCase);
-
 let textToUpperCase = textToLowerCase.toUpperCase();
 console.log("start string toUpperCase" + textToUpperCase);
-
 console.log(textToUpperCase);
+
+
+
+//Substring and slice
+
+let message = "Hello from JavaScript my friend";
+console.log("message = " + message);
+console.log("substring returns chars in the interval given");
+let messageSubstring = message.substring(11,21);
+
+console.log("message substring 11,21" + messageSubstring);
+
+let messageForSlicing = "No, please don´t slice me";
+console.log(messageForSlicing);
+let slicedMessage = messageForSlicing.slice(11,9);
+console.log(slicedMessage);
+console.log(messageForSlicing);
+
+
+
+
+//Find string
+
+let article = "Ända sedan Daniel Craig 2021 tackade ja för sig som James Bond";
+let articleToLower = article.toLowerCase();
+let hero;
+
+if(articleToLower.includes("james bond")) {
+    let index = articleToLower.indexOf("james bond");
+    hero = articleToLower.substring(index, index + 11);
+   
+}else{
+    hero = "Mr Bean";
+}
+
+console.log("The hero is: " +  hero);
+
+
+
+
+//Trim
+
+let badInputText = "    Hello    ";
+console.log("badInputText: " + badInputText);
+let trimedText = badInputText.trim();
+console.log("trimedText: " + trimedText);
+
+
+
+//Split
+
+let userData = "Bob, Rob, Zob, Bobland, Robland, Zobland, 34539876, Bobska, Rrobska, Zobska";
+let userDataSplit = userData.split(",");
+console.log("Data before split");
+console.log(userData);
+//get value from the list, trim it, and put it back
+
+for(let i = 0; i < userDataSplit.length; i++) {
+
+    userDataSplit[i] = userDataSplit[i].trim();
+}
+
+console.log("Data after split");
+console.log(userDataSplit);
