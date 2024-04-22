@@ -174,3 +174,39 @@ if(Number.isInteger(integerNumber)) {
 }
 
 console.log(convertedNumber);
+
+
+//String length
+
+let myName = "Lukas";
+let school = "Grit Academy";
+let emptyString = "";
+
+console.log(`String variable with value ${myName} is ${myName.length}`);
+console.log(`String variable with value ${emptyString} is ${emptyString.length} chars long`);
+
+
+
+//String concatenate
+
+console.log(`5 + "5"`);
+console.log(5 + "5"); //this will give 55. JS is going to treat it a string concatenate
+
+console.log(`5 + 5`);
+console.log(5 + 5); //this will be treated as math
+
+
+
+
+//Upper and lower case
+
+let text = "HELLO";
+
+console.log("start String: " + text);
+let textToLowerCase = text.toLowerCase();
+console.log("start string toLowerCase()" + textToLowerCase);
+
+let textToUpperCase = textToLowerCase.toUpperCase();
+console.log("start string toUpperCase" + textToUpperCase);
+
+console.log(textToUpperCase);
