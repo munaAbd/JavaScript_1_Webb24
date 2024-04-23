@@ -219,6 +219,10 @@ for( let row= 0; row < rowCount; row++){
 
    */
 
+    //let cell = 
+    
+    //document.getElementById( `${row}${col}`).
+    //cell.innerText = "hej";
  
 
 
