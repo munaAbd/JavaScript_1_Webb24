@@ -1,5 +1,5 @@
 
-/*
+
 //Aritmetik
 console.log(Math.pow(10,2));
 console.log(Math.round(7.8));
@@ -57,14 +57,14 @@ let integerNum= 5;
 let convertNum;
 console.log(convertNum);
 
-/* If inetegerNum is a number then convert if to a string
+/*If inetegerNum is a number then convert if to a string
 
 if(Number.isInteger(integerNum)){
     convertNum = integerNum.toString();
 }
 console.log(convertNum);
 */
-/*
+
 // String length
 
 let myName= "Lena";
@@ -149,16 +149,39 @@ console.log(textWords);
 let message02="Hello Maria";
 let newMessage02=message02.replace("Maria","Martha");
 console.log(newMessage02);
-*/
 
-let txt1="   Skärmskydd,499";
-let txt2="MobilTelefon,299,";
-let txt3="   Telefonfodral, 89,";
-let txt4="Laptop,    799";
-let txt5="Hörlurar  ,  199";
 
+// ÖVNING
+
+
+let txt1 = " Skärmskydd , 499"
+let txt2 = "Mobiltelefon, 299, "
+let txt3 = " Telefonfodral, 89, "
+let txt4 = " Laptop, 799"
+let txt5 = " Hörlurar , 199 "
+
+// How to split text in txt1
 let txt1Split=txt1.split(",");
 console.log(txt1Split);
+
+
+// Another way to solve the code
+/*
+let txt1Product =txt1.substring(2,13);
+txt1Product = txt1Product.toUpperCase();
+
+// Code with a list
+let txt1Split=txt1.split(",");
+console.log(txt1Split);
+for(let i=0; i<txt1Split.length ;i++ ){
+    txt1Split[i]=txt1Split[i].trim();
+}
+console.log(txt1Split);
+txt1Split[0] = txt1Split[0].toUpperCase();
+txt1Split[1] = Number.parseInt(txt1Split[1]);
+console.log(txt1Split);
+*/
+
 
 let txt2Split=txt2.split(",");
 console.log(txt2Split);
@@ -172,6 +195,8 @@ console.log(txt4Split);
 let txt5Split=txt5.split(",");
 console.log(txt5Split);
 
+
+// After split can trim be used
 let txt1Trim= txt1Split[0].trim();
 console.log(txt1Trim);
 let txt2Trim=txt2Split[0].trim()
@@ -183,6 +208,7 @@ console.log(txt4Trim);
 let txt5Trim=txt5Split[0].trim();
 console.log(txt5Trim);
 
+//Trim Price 
 let txt1TrimPrice= txt1Split[1].trim();
 console.log(txt1TrimPrice);
 let txt2TrimPrice=txt2Split[1].trim()
@@ -194,18 +220,22 @@ console.log(txt4TrimPrice);
 let txt5TrimPrice=txt5Split[1].trim();
 console.log(txt5TrimPrice);
 
+// Upper Case
 console.log(txt1Split[0].toUpperCase());
 console.log(txt2Split[0].toUpperCase());
 console.log(txt3Split[0].toUpperCase());
 console.log(txt4Split[0].toUpperCase());
 console.log(txt5Split[0].toUpperCase());
 
-console.log(txt2Trim.replace(",","-"));
-console.log(txt1Trim.replace(",","-"));
-console.log(txt3Trim.replace(",","-"));
-console.log(txt4Trim.replace(",","-"));
-console.log(txt5Trim.replace(",","-"));
+// Replace , with - 
+console.log(txt1.replaceAll(",","-"));
+console.log(txt2.replaceAll(",","-"));
+console.log(txt3.replaceAll(",","-"));
+console.log(txt4.replaceAll(",","-"));
+console.log(txt5.replaceAll(",","-"));
 
+
+// includes
 if(txt1Trim.includes("Telefon")){
     console.log(txt1Trim);
 }else{
@@ -215,13 +245,13 @@ if(txt1Trim.includes("Telefon")){
 if(txt2Trim.includes("Telefon")){
     console.log(txt2Trim);
 }else{
-    console.log(txt2Trim + " har inte ordet ´Telefon´");
+    console.log(txt2Trim+ " har inte ordet ´Telefon´");
 }
 
 if(txt3Trim.includes("Telefon")){
     console.log(txt3Trim);
 }else{
-    console.log(txt2Split + " har inte ordet ´Telefon´");
+    console.log(txt2Split+ " har inte ordet ´Telefon´");
 }
 if(txt4Trim.includes("Telefon")){
     console.log(txt4Trim);
