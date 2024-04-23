@@ -154,7 +154,7 @@ console.log( " string after:" + stringAfter);
 
 //stringBefore= "this is the new text";
 
-/*
+
 
 //Övning 5;
 
@@ -219,7 +219,7 @@ b=Number.parseInt(b);
 }
 */
 
-
+/*
 let txt1 = "  Skärmskydd, 499,";
 console.log("original text1: " + txt1);
 txt1 = txt1.replaceAll(",","-");
@@ -260,3 +260,4 @@ txt1Split[1] = Number.parseInt(txt1Split[1]);
 console.log("txt1Product:" + txt1Product);
 console.log
 }
+*/
