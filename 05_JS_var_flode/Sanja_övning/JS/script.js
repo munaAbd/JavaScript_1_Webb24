@@ -336,6 +336,9 @@ for(let i = 0; i < userCompSplit.length; i++) {
 
 console.log(userCompSplit);
 
+
+//another example
+
 const products = [
     {
       name: "Skärmskydd",
@@ -405,3 +408,4 @@ console.log(processString(txt4));
 console.log(processString(txt5));
 
   
+
