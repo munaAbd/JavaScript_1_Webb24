@@ -323,13 +323,85 @@ for(let i = 0; i < userCompSplit.length; i++) {
     if(i%2 !== 0) {
         
         userCompSplit[i]= Number.parseInt(userCompSplit[i]);
-     } 
 
-     if(i%2 === 0) {
+    }
+    
+    if(i%2 === 0) {
 
-        
-     }
-}
+        userCompSplit[i] = userCompSplit[i].toUpperCase();
+
+    } 
+}  
+
 
 console.log(userCompSplit);
 
+const products = [
+    {
+      name: "Skärmskydd",
+      price: 499
+    },
+    {
+      name: "Mobiltelefon",
+      price: 299
+    },
+    {
+      name: "Telefonfodral",
+      price: 89
+    },
+
+    {  name: "Laptop",
+       price: 799 
+    },
+
+    {  name: "Hörlurar",
+       price: 199 
+    
+    }
+    
+
+  ];
+
+  console.log(products);
+
+
+
+ 
+  
+  // Definiera strängarna
+var txt1 = " Skärmskydd , 499";
+var txt2 = "Mobiltelefon, 299, ";
+var txt3 = " Telefonfodral, 89, ";
+var txt4 = " Laptop, 799";
+var txt5 = " Hörlurar , 199 ";
+
+// Funktion för att bearbeta varje sträng
+function processString(txt) {
+    // Dela upp strängen vid kommatecken och trimma för att ta bort mellanslag
+    var parts = txt.split(",");
+    var productName = parts[0].trim().toUpperCase(); // Konvertera till versaler
+    var price = parseFloat(parts[1].trim()); // Konvertera priset till ett numeriskt värde
+
+    // Ersätt kommatecknet med bindestreck och ta bort eventuella mellanslag runt bindestrecket
+    productName = productName.replace(",", " - ");
+
+    // Kontrollera om produktnamnet innehåller ordet "Telefon"
+    if (productName.includes("TELEFON")) {
+        console.log(productName); // Skriv ut produktnamnet om det innehåller "Telefon"
+    }
+
+    // Returnera produktnamn och pris som ett objekt
+    return {
+        productName: productName,
+        price: price
+    };
+}
+
+// Bearbeta varje sträng och skriv ut resultatet
+console.log(processString(txt1));
+console.log(processString(txt2));
+console.log(processString(txt3));
+console.log(processString(txt4));
+console.log(processString(txt5));
+
+  
