@@ -62,8 +62,8 @@ console.log(var4);
 
 let count = 0;
 
-function add(){
-
+function läggTillmaträtt(){
+conter++;
     for (let i = 0; i < 10; i++) {
         count = count + 1;
         let h1 = document.createElement("h1");
