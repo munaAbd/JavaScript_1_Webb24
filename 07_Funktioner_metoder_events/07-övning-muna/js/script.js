@@ -48,5 +48,3 @@ function taBortMaträtt() {
     console.log(`En maträtt borttagen. Det finns nu ${counter} maträtter kvar.`);
   }
 }
-//
-let =counter  0;
