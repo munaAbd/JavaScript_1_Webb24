@@ -179,7 +179,7 @@ for( let row= 0; row < rowCount; row++){
             let tableHeader = document.createElement("th");
             tableHeader.setAttribute("id", `${row}${col}`);
 
-            tableHeader.innerText= " Index " + `${col}` ;
+            tableHeader.innerText= " Index " + `${col}`;
 
             tableHeader.style.border = " 2px solid black"; 
             tableRow.appendChild(tableHeader);
@@ -195,6 +195,7 @@ for( let row= 0; row < rowCount; row++){
         }
     }
 }
+
  body.appendChild(table);
 
 
