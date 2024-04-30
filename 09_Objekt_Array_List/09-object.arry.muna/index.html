@@ -15,18 +15,18 @@
     <p>button3 -  button1 or button4</p>
     <p>button4 -  button3 or button2</p>
 
-    <button type="button" onclick="button1();" id="button1">button1</button>
-    <button type="button" onclick="button2();" id="button2">button2</button>
+    <button type="button" onclick="forward();" id="button1">forward</button>
+    <button type="button" onclick="backwards();" id="button2">backwards</button>
     <br>
-    <button type="button" onclick="button3();" id="button3">button3</button>
+    <button type="button" onclick="stoP();" id="button3">stoP</button>
     <button type="button" onclick="button4();" id="button4">button4</button>
 
-
-
-    <button type="button" onclick="buildWebsite();" id="button1">Build Webpage</button>
+       <button type="button" onclick="buildWebsite();" id="button1">Build Webpage</button>
         <button type="button" onclick="clearWebpage();" id="button2">Clear Webpage</button>
-
-        <script src="js/flag.js"></script>
+       
+     <input type="range" id="slider" min="0" max="100" onchange="changematrixsize();">
+       
+     <script src="js/flag.js"></script>
         <script src="js/scriPt.js"></script>
 </body>
 </html>
