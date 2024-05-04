@@ -105,6 +105,7 @@ body.appendChild(makeHeaderTwo("Table with tablerows, headers, and rows"));
 
 let table = makeTable(5, 8);
 body.appendChild(table);
+document.getElementById("1:0").innerText="Hello";
 
 
 let article1 = makeArticle("article_1", "articles");
