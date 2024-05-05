@@ -177,3 +177,217 @@ function stop(){
     isRunning = false;
 }
 */
+
+//ÖVNING:
+
+//1.
+
+function beräknaSumma(array){
+
+    let sum = 0;
+    
+    for(let i = 0; i < array.length; i++){
+     
+        sum = sum + array [i];
+        //sum += array[i];
+    
+    }
+    
+    return sum;
+    
+    }
+    
+    let array = [1,2,3,4,5];
+    console.log(beräknaSumma(array));
+    
+    
+    //2.
+    
+    function konkateneraSträngar( sträng1,sträng2){
+    
+        
+         return sträng1 + sträng2;
+    
+    }
+        let sträng1= "Hello";
+        let sträng2= "World";
+    konkateneraSträngar(sträng1,sträng2);
+    
+    
+    //3.
+    
+    function ärJämntal(tal){
+    
+      return  tal % 2===0 ;
+    
+    }
+    console.log(ärJämntal(4));
+    console.log(ärJämntal(5));
+    
+    
+    //4.
+    
+    function räknaVokaler(sträng){
+    
+        let vokaler = "aeiou";
+        let count = 0;
+        
+        
+        for(var i = 0; i < sträng.length; i++){
+        if(vokaler.indexOf(sträng[i]) > -1){
+    
+           count++;
+        }
+            
+        }
+    
+        return count; 
+    }
+    
+    let testSträng="underbar dag idag";
+    console.log(räknaVokaler(testSträng));
+    
+    
+    //5.
+    
+    function genereraMuliplikationstabell(tal){
+    
+        for( let i = 1; i <=10 ; i++ ){
+    
+             let summa = tal * i;
+    
+             console.log( tal + " * " + i + " = " + summa);
+    
+        }
+    }
+    
+    genereraMuliplikationstabell(3);
+    
+    
+    //6.
+    
+    
+    function bedömBetyg(grade){
+    
+    if( grade >=90) {
+        return "A";
+    } else if(grade >= 80 && grade <=89){
+        return "B";
+    } else if( grade >=70 && grade <= 79){
+        return "C";
+    } else if( grade >= 60 && grade <= 69){
+        return "D";
+    } else {
+        return "F";
+    }
+    }
+    
+    let grade = 50;
+    console.log( "Betyg"  +  bedömBetyg(grade));
+    
+    
+    
+    
+    //7.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //8.
+    
+    function hittaStörsta(array){
+    
+        let största = array[0];
+    
+        for( let i = 0; i < array.length; i++){
+    
+            if(array[i] > största){
+                största = array[i]
+            }
+    
+         }
+     
+         return största;
+    }
+    
+    let talet = [16,7,8,1,55,20];
+    console.log("Största element är" + hittaStörsta(talet));
+    
+    //9.
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    //10.
+    
+    function beräknaMedelvärde(array){
+    
+        let värde = 0 ;
+    
+        for( let i = 0; i < array.length; i++){
+    
+        värde = värde + array[i];
+    }
+    
+        let medelvärde = värde / array.length;
+    
+        return medelvärde;
+    
+    }
+    
+    let num = [10,20,30,40,50,60];
+    console.log("Medelvärdet är" + beräknaMedelvärde(num));
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
