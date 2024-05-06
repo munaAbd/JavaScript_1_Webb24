@@ -9,13 +9,24 @@ let body = document.getElementById("body");
     // create a function for navbar 
 
     // if (isBuild === false) { // if isBuild is false so the butoon will work
-        function backgroundImg(){
-            
+        function backgroundImg(element, url){
+            element.style.backgroundImage = "url("+url+")"
 
         }
         function navBar(){
             let nav = document.createElement("nav");
             body.appendChild(nav);
+            backgroundImg(nav, "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_Bild-de.svg/2560px-Logo_Bild-de.svg.png");
+            nav.innerText = "hello backgroundImg(bodyupload.wikimedia.org/wikipedia/commons/thumb/d/de/Logo_Bild-de.svg/2560px-Logo_Bild-de.svg.png"
+
+            nav.style.backgroundSize = "contain"
+            // nav.style.height = "500px"
+            nav.style.width ="300px"
+
+            nav.style.backgroundRepeat ="no-repeat";
+            nav.style.margin= " 0 auto";
+
+
         }
     
         // create a function for h1 to be able to use often in different places by calling the function
@@ -112,6 +123,10 @@ let body = document.getElementById("body");
             para4.style.border="1px solid black";
 
 
+            // style for cell 0:0
+            let cell00 = document.getElementById("0:0");
+            cell00.style.backgroundColor="lightpink";
+
             // let button=document.getElementById("refreshButton");
             // button.style.backgroundColor="lightpink";
     
@@ -201,7 +216,6 @@ let body = document.getElementById("body");
         article_2.appendChild(paraArt22); // append the second para to the article
         body.appendChild(article_2);// append article-2 to body element
     
-        backgroundImg();
         style();
         // isBuild = true; // we give the variable isBuild a new value that will change when we click on the button and the button will not work anymore because of if-condition is not right
 //    }
