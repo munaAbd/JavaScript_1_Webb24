@@ -110,11 +110,22 @@ function beräknaSumma(array){
     
     
     //7.
+    function räknaFörekomst(array,element){
+
+        let count= [];
     
+        for( let i = 0; i < array.length; i++){
+            if( array[i]=== element){
+                count++;
     
+           }
+        }
+        return count;
+    }
+    let minArr =["a","a","a","b","c","d"];
+    let minElement = "a";
     
-    
-    
+    console.log(räknaFörekomst(minArr,minElement));
     
     
     
@@ -141,15 +152,16 @@ function beräknaSumma(array){
     
     //9.
     
+    function kombineraArray(a1,a2){
+
+        return [ ...a1,...a2];
+    }
     
     
+    let a1 = ["a","a","a"];
+    let a2 = ["b","b","b"];
     
-    
-    
-    
-    
-    
-    
+    console.log(kombineraArray(a1,a2));
     
     
     //10.
