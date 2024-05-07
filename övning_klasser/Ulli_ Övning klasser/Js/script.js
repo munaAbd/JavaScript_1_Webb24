@@ -13,16 +13,16 @@ class Plane{
     }
 
     addPilot(pilot){
-        this.getPilotesCount.push(pilot);
+    this.getPilotesCount.push(pilot);
     };
 
     removeLastPilot(){
-        this.pilots.pop();
+    this.pilots.pop();
     }
 
     getPilotesCount(){
 
-        return this.pilots.length;
+    return this.pilots.length;
     };
  
 
