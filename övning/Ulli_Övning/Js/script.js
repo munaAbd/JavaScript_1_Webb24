@@ -317,26 +317,31 @@ function beräknaSumma(array){
      let myElement = 30;
      console.log(räknaFörekomster(myArray,myElement));
     
-     //8.   HELP!!!!!!
-    /*
-     function taBortDuplicerade(array){
+     //8.   
     
-        let count = [];
+     function taBortDuplicerade(arr){
     
-        for(let i = 0; i < array.length; i++){
+        for(let i = 0; i < array.length -1; i++){
     
-            if(!count.includes(element)){
-               count.push(element);
-               
+           for(let j = i+1; j < arr.length; j++){
+
+            console.log(`${i} - ${j}`);
+            if (arr[i] === arr[j]){
+                console.log(i + ":" + arr[i] + "---" + j + ":" + arr[j]);
+                arr.splice(j,1);
             }
-         }
-    
-         return count;
+            console.log(arr);
+           }
+        }
+        return arr;
      }
-    let myArr =[1,1,1,3,6,5,7,9];
-    console.log(taBortDuplicerade(myArr));
-    */
-    
+    let testArray = [1,2,3,4,5,6,2,2,4,8];
+    console.log(testArray);
+    console.log(taBortDuplicerade(testArray));
+
+
+
+
     
     //9.
     
